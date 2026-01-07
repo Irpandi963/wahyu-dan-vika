@@ -40,6 +40,43 @@ body {
 }
 
 
+/* ================================
+   Keluarga Mempelai
+================================ */
+.keluarga {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.keluarga-item {
+  margin-bottom: 28px;
+}
+
+.keluarga .title {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.nama-pengantin {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.ortu {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.keluarga-list {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+}
 
 
 
