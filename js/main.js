@@ -91,7 +91,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 });
 
-setupCountdown(".campaign-0", new Date().getMilliseconds(), 1924920000000);
+const startTime = new Date().getTime();
+const endTime = new Date("2026-01-14T08:00:00+07:00").getTime();
+
+setupCountdown(".campaign-0", startTime, endTime);
+
 
 
 
