@@ -17,7 +17,6 @@ body {
     height: 100%;
 }
 
-
 /* baru */
 
 .kepada {
@@ -652,94 +651,84 @@ section {
 /*============================================================================================
     # Aturcara
 ============================================================================================*/
-.card section.info .aturcara {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    z-index: 500;
-    position: relative;
-}
+/* ================================
+   ATURCARA MAJLIS
+================================ */
 
-.card section.info .aturcara p {
-    font-family: "Roboto", sans-serif;
+.aturcara {
+    margin: 60px auto;
     text-align: center;
+    padding: 0 20px;
+}
+
+.aturcara .title {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #7a1f1f;
+    margin-bottom: 30px;
     letter-spacing: 1px;
-    color: #111111;
 }
 
-.card section.info .aturcara .title {
-    color: #111111;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
+.aturcara > div {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-.card section.info .aturcara .one,
-.card section.info .aturcara .two,
-.card section.info .aturcara .three,
-.card section.info .aturcara .four {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.aturcara > div p:first-child {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
 }
 
-.card section.info .aturcara .one p,
-.card section.info .aturcara .two p,
-.card section.info .aturcara .three p,
-.card section.info .aturcara .four p {
-    color: #111111;
-    font-weight: 300;
+.aturcara > div p:last-child {
     font-size: 14px;
-    letter-spacing: 1px;
+    color: #777;
+    letter-spacing: 0.5px;
 }
-
-.card section.info .aturcara .one p:nth-child(2),
-.card section.info .aturcara .two p:nth-child(2),
-.card section.info .aturcara .three p:nth-child(2),
-.card section.info .aturcara .four p:nth-child(2) {
-    color: darkgrey;
-}
-
-
-
 
 
 /*============================================================================================
     # Ucapan
 ============================================================================================*/
-.card section.info .ucapan .container {
+/* ================================
+   UCAPAN DOA
+================================ */
+
+.ucapan {
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.ucapan .container {
     position: relative;
-    max-width: 420px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    z-index: 500;
-}
-
-.card section.info .ucapan .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 85%;
-}
-
-.card section.info .ucapan .content p {
-    font-size: 16px;
-    font-family: 'Cormorant Garamond', serif;
-    margin: 0;
     text-align: center;
 }
 
-.card section.info .ucapan img {
+.ucapan img {
     width: 100%;
-    height: auto;
+    max-width: 420px;
+    opacity: 0.9;
 }
 
+.ucapan .content {
+    margin-top: -40px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.ucapan .content p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+    font-style: italic;
+}
 
 
 /*============================================================================================
