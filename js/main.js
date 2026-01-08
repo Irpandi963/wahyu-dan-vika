@@ -489,6 +489,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Ambil parameter 'to' dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const namaTamu = urlParams.get('to');
+
+if (namaTamu) {
+    const namaTamuElem = document.getElementById("nama-tamu");
+    // Update elemen nama tamu
+    namaTamuElem.textContent = decodeURIComponent(namaTamu);
+}
+
+
 
 /** =====================================================
  *  Image Carousel
