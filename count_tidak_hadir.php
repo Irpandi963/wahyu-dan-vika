@@ -1,17 +1,21 @@
 <?php
+<?php
+header('Content-Type: application/json'); // <<< tambahkan ini
+
 $servername = "127.0.0.1:3306";
 $username = "root";
 $password = "";
 $database = "kad_kahwin";
 
-$connection = mysqli_connect($servername, $username, $password);
+$connection = mysqli_connect($servername, $username, $password, $database);
+
 
 if (!$connection) {
     echo json_encode(['attend' => false, 'error' => 'Database connection failed']);
     exit;
 }
 
-mysqli_select_db($connection, $database);
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] === 'increment') {
     $update_query = "UPDATE `kehadiran` SET `jumlah_tidak_hadir` = `jumlah_tidak_hadir` + 1 WHERE `id` = 1";
