@@ -734,142 +734,78 @@ section {
 /*============================================================================================
     # RSVP
 ============================================================================================*/
-.card section.info .rsvp {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    z-index: 500;
+/* ================================
+   UCAPAN TAMU
+================================ */
+
+.rsvp {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.card section.info .rsvp h2 {
-    text-transform: uppercase;
-    color: #111111;
-    text-align: center;
+.rsvp h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    color: #7a1f1f;
     margin-bottom: 30px;
 }
 
-.card section.info .rsvp .container-message {
-    width: 95%;
-    height: 450px;
-    overflow-y: auto;
-    padding: 0px 16px;
-    border-top: 1px solid wheat;
-    border-bottom: 1px solid wheat;
+.container-message {
+    display: grid;
+    gap: 16px;
 }
 
-.card section.info .rsvp .container-message .content {
-    overflow: hidden;
-    width: 100%;
-    white-space: normal;
-    text-overflow: ellipsis;
-    border-bottom: 1px solid #DDDDDD;
-}
-
-.card section.info .rsvp .container-message .content p {
-    font-size: 16px;
-    font-family: 'Cormorant Garamond', serif;
-    margin: 0;
+.container-message .content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px 18px;
     text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.card section.info .rsvp .container-message .content p.name {
-    color: darkcyan;
-    margin-top: 10px;
-}
-
-.card section.info .rsvp .container-message .content p.name::before {
-    content: '--';
-    color: grey;
-    font-size: 0.9em;
-    margin-right: 8px;
-}
-
-.card section.info .rsvp .container-message .content p.name::after {
-    content: '--';
-    color: grey;
-    font-size: 16px;
-    margin-left: 8px;
-}
-
-.card section.info .rsvp .container-message .content p.message {
-    color: darkgrey;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.card section.info .rsvp .container-message .content-empty {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.card section.info .rsvp .container-message .content-empty p.empty-message {
-    color: darkgray;
-    text-align: center;
-}
-
-
-.card section.info .rsvp .container-message::-webkit-scrollbar {
-    width: 2px;
-    background-color: #ADD8E6;
-}
-
-.card section.info .rsvp .container-message::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgb(114, 243, 243);
-    -webkit-box-shadow: inset 0 0 6px rgb(1, 66, 66);
-    background-color: navy;
-    border-radius: 12px;
-}
-
-.card section.info .rsvp .beri-ucapan-button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    gap: 5px;
-}
-
-.card section.info .rsvp .beri-ucapan-button button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 0px;
-    width: 45%;
-    border-radius: 10px;
-    border: 1px solid grey;
-    /* background: linear-gradient(90deg, #E5BDF6, #D8DEDE) !important; */
-    /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
-    background: #F8F4FF;
-    cursor: pointer;
-    gap: 10px;
-}
-
-.card section.info .rsvp .beri-ucapan-button button:hover {
-    /* background: linear-gradient(90deg, #E5BDF6, #D8DEDE) !important; */
-    /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
-    background: #F8F4FF;
-    opacity: 0.8;
-}
-
-.card section.info .rsvp .beri-ucapan-button button .bx {
-    font-size: 16px;
-    color: darkcyan;
-}
-
-.card section.info .rsvp .beri-ucapan-button button span {
+.container-message .name {
+    font-weight: 600;
     font-size: 14px;
-    font-weight: 500;
+    color: #7a1f1f;
+    margin-bottom: 6px;
 }
+
+.container-message .message {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+}
+/* ================================
+   BUTTON UCAPAN
+================================ */
+
+.beri-ucapan-button {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.beri-ucapan-button button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background: #7a1f1f;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(122, 31, 31, 0.35);
+    transition: all 0.3s ease;
+}
+
+.beri-ucapan-button button:hover {
+    background: #5f1818;
+    transform: translateY(-2px);
+}
+
 
 
 /*============================================================================================
