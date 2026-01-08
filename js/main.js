@@ -300,7 +300,7 @@ const toggleButtons = {
     'ucapan-btn': 'ucapan-menu',
     'contact-btn': 'contact-menu',
     'kehadiran-btn': 'rsvp-menu',
-    'btn-hadir': 'success-menu'
+   
     // Add other button-to-menu mappings here
 };
 
@@ -461,6 +461,32 @@ document.getElementById("btn-tidak-hadir").onclick = function() {
 };
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const btnHadir = document.getElementById("btn-hadir");
+    const btnTidakHadir = document.getElementById("btn-tidak-hadir");
+
+    if (btnHadir) {
+        btnHadir.onclick = function() {
+            incrementCount(
+                'count_hadir.php', 
+                "Kami menantikan kedatangan anda!", 
+                'bx bxs-wink-smile', 
+                'rsvp-menu'
+            );
+        };
+    }
+
+    if (btnTidakHadir) {
+        btnTidakHadir.onclick = function() {
+            incrementCount(
+                'count_tidak_hadir.php', 
+                "Maaf, mungkin lain kali.", 
+                'bx bxs-sad', 
+                'rsvp-menu'
+            );
+        };
+    }
+});
 
 
 
