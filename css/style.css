@@ -18,7 +18,34 @@ body {
 }
 
 
+/* baru */
+.kepada-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
 
+.kepada-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.kepada-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.kepada-nama {
+    font-size: 20px;
+    font-weight: 600;
+    color: #8B0000;
+}
+
+/*
 /* ================================
    Tambahan Styling Pengantin
 ================================ */
