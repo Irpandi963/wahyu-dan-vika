@@ -876,7 +876,10 @@ section {
     text-transform: uppercase;
 }
 
-.toggle-menu .calendar,
+.toggle-menu .calendar {
+    justify-content: flex-start;
+}
+
 .toggle-menu .location,
 .toggle-menu .music,
 .toggle-menu .rsvp,
