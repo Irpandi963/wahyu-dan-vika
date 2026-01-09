@@ -499,7 +499,6 @@ if (namaTamu) {
     namaTamuElem.textContent = decodeURIComponent(namaTamu);
 }
 
-document.getElementById("calendar-menu").classList.add("open");
 
 
 /** =====================================================
