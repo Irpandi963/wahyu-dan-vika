@@ -327,21 +327,30 @@
 
     <div id="location-menu" class="toggle-menu">
         <div class="location">
-            <h1>Lokasi</h1>
-           <p>Jl. Sudirman No. 106</p>
+          <h1>Lokasi</h1>
+            
+            <p>Jl. Sudirman No. 106</p>
             <p>Kecamatan Kuantan Hilir</p>
             <p>Pasar Usang, Baserah</p>
-
-            <div class="button" onclick="openGoogleMaps()">
-                <button class="google">
-                    <i class='bx bxl-google'></i>
-                    <span>Maps</span>
+            
+            <!-- MAP LANGSUNG -->
+            <div class="map-embed">
+                <iframe
+                    src="https://www.google.com/maps?q=Jl.+Sudirman+No.+106,+Baserah&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- TOMBOL -->
+            <div class="button">
+                <button onclick="openGoogleMaps()">
+                    <i class='bx bxl-google'></i> Maps
                 </button>
-                <button class="waze" onclick="openWaze()">
-                    <i class="fa-brands fa-waze"></i>
-                    <span>Waze</span>
+                <button onclick="openWaze()">
+                    <i class="fa-brands fa-waze"></i> Waze
                 </button>
             </div>
+
         </div>
     </div>
 
