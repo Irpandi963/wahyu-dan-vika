@@ -42,22 +42,49 @@ body {
    Maps
 ================================ */
 .maps-section {
-    text-align: center;
-    padding: 20px 15px;
+    padding: 30px 16px;
+    display: flex;
+    justify-content: center;
 }
 
-.maps-section .title {
+.maps-card {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+.maps-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+.maps-title {
     font-size: 18px;
-    margin-bottom: 12px;
     font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.maps-desc {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 14px;
 }
 
 .map-embed {
     width: 100%;
-    height: 250px;
-    border-radius: 12px;
+    height: 230px;
+    border-radius: 14px;
     overflow: hidden;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .map-embed iframe {
@@ -66,16 +93,24 @@ body {
     border: 0;
 }
 
-.map-button a {
+.maps-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
-    padding: 10px 16px;
-    background: #000;
-    color: #fff;
-    border-radius: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
     font-size: 14px;
     text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #000, #333);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.maps-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
 }
 
 /*
