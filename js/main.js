@@ -22,7 +22,11 @@ document.getElementById("toggle-content").addEventListener("click", function () 
     wrapper.addEventListener("transitionend", function () {
         // After fade out is complete, hide the wrapper and show the card
         wrapper.style.display = "none"; // Hide the wrapper
-        card.style.display = "block";  
+        card.style.display = "block"; 
+        setTimeout(() => {
+    reveal();
+}, 150);
+
   
 // Show the card
     }, { once: true });
