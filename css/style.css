@@ -305,22 +305,26 @@ body {
     # PREMIUM SCROLL FADE
 ============================================================================================*/
 
+/*================= LUXURY FADE FROM BOTTOM =================*/
 .reveal {
   opacity: 0;
-  transform: translateY(60px) scale(0.98);
-  filter: blur(8px);
+  transform: translateY(60px) scale(0.97);
   transition:
-    opacity 1s ease,
-    transform 1s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 1s ease;
-  will-change: transform, opacity;
+    opacity 1.2s ease,
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal.active {
   opacity: 1;
   transform: translateY(0) scale(1);
-  filter: blur(0);
 }
+
+/* judul lebih anggun */
+.reveal h1,
+.reveal h2 {
+  transition-duration: 1.4s;
+}
+
 
 .fade-top-1 {
     animation: growth 0.5s ease-in-out;
