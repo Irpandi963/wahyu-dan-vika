@@ -305,19 +305,41 @@ body {
     # PREMIUM SCROLL FADE
 ============================================================================================*/
 
-/*================= LUXURY FADE FROM BOTTOM =================*/
+/*============================================================================================
+   LUXURY WEDDING SCROLL ANIMATION
+============================================================================================*/
+
+/* Default reveal */
 .reveal {
   opacity: 0;
   transform: translateY(60px) scale(0.97);
   transition:
     opacity 1.2s ease,
     transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
 }
 
+/* Aktif */
 .reveal.active {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
+
+/* Judul – lebih lembut */
+.reveal.title,
+.reveal h1,
+.reveal h2 {
+  transform: translateY(40px) scale(0.98);
+  transition-duration: 1.4s;
+}
+
+/* Konten – mengalir */
+.reveal p,
+.reveal li {
+  transition-delay: .1s;
+}
+
+
 
 /* judul lebih anggun */
 .reveal h1,
