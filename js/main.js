@@ -23,9 +23,7 @@ document.getElementById("toggle-content").addEventListener("click", function () 
         // After fade out is complete, hide the wrapper and show the card
         wrapper.style.display = "none"; // Hide the wrapper
         card.style.display = "block";  
-        setTimeout(() => {
-    reveal();
-}, 150);
+  
 // Show the card
     }, { once: true });
 
@@ -503,8 +501,30 @@ if (namaTamu) {
 }
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("toggle-content");
+  const overlay = document.getElementById("overlay");
+  const card = document.querySelector(".card");
+  const audio = document.getElementById("audio-player");
 
+  btn.addEventListener("click", function () {
+    overlay.style.display = "none";
+    card.classList.add("show");
 
+    // play audio (allowed karena user interaction)
+    if (audio) {
+      audio.play().catch(() => {});
+    }
+
+    // PAKSA jalankan reveal TANPA SCROLL
+    setTimeout(() => {
+      reveal();
+      window.dispatchEvent(new Event("scroll"));
+    }, 100);
+  });
+});
+</script>
 
 
 
