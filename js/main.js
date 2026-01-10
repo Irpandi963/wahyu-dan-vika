@@ -35,7 +35,6 @@ document.getElementById("toggle-content").addEventListener("click", function () 
 
 
 
-
 /** =====================================================
  *  Timer Countdown
   ======================================================= */
@@ -515,14 +514,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.2,
-      rootMargin: "0px 0px -80px 0px"
+      threshold: 0.18,
+      rootMargin: "0px 0px -120px 0px"
     }
   );
 
   reveals.forEach(el => observer.observe(el));
 });
 </script>
+
 
 
 /** =====================================================
