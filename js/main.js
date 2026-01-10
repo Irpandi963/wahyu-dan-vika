@@ -501,11 +501,11 @@ if (namaTamu) {
 
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const reveals = document.querySelectorAll(".reveal");
+document.addEventListener("DOMContentLoaded", function () {
+  const revealElements = document.querySelectorAll(".reveal");
 
   const observer = new IntersectionObserver(
-    entries => {
+    (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("active");
@@ -514,15 +514,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.2,
-      rootMargin: "0px 0px -80px 0px"
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px"
     }
   );
 
-  reveals.forEach(el => observer.observe(el));
+  revealElements.forEach(el => observer.observe(el));
 });
-
 </script>
+
 
 
 
