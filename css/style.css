@@ -1329,5 +1329,35 @@ section {
 
 
 /*============================================================================================
+    # Ucapan
+===========================================================================================*/
+
+.ucapan .container {
+    position: relative;
+}
+
+.ucapan .content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center;
+}
+
+/* FOTO DI DALAM BINGKAI */
+.foto-ucapan {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-bottom: 14px;
+
+    border: 3px solid #d8b37c;
+    background: #fff;
+}
+
+/*============================================================================================
     # Image Carousel
 ============================================================================================*/
