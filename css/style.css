@@ -826,40 +826,26 @@ section {
     padding: 0 20px;
 }
 
-.ucapan .container {
-    position: relative;
-    text-align: center;
+.ucapan .container{
+  position: relative;
+  aspect-ratio: 3 / 4; /* sesuaikan */
 }
 
-.ucapan img {
-    width: 100%;
-    max-width: 420px;
-    opacity: 0.9;
+.ucapan .container img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.ucapan .content {
-    margin-top: -40px;
-    padding: 22px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+/* TEKS DI LUAR */
+.ucapan .content{
+  position: static;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.ucapan .content p {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #444;
-    font-style: italic;
-}
-
-/* TAMBAHAN: foto overlay */
-.ucapan .foto-overlay{
-  position:absolute;
-  bottom:12%;
-  left:50%;
-  transform:translateX(-50%);
-  width:120px;
-}
 /*============================================================================================
     # RSVP
 ============================================================================================*/
